@@ -1,0 +1,30 @@
+body {
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #6ebb15;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 80px;
+}
+
+h2 {
+  color: #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+  color: #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  color: #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+li {
+  color: #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:20px;
+}
