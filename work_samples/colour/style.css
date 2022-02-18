@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:wght@300&family=Roboto:wght@300;700;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+button {
+    border: 0px;
+    font-size: 3vh;
+    font-family: Mochiy Pop P One;
+    color:white;
+    background-color: rgb(107, 107, 107);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+button:hover { 
+    background-image: url(rainbow.jpg);
+    background-size: 100%;
+}
