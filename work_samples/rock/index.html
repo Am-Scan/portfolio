@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div id='main-elements'>
+    <h1>Rock, Paper, Scissors!</h1>
+    <button id="rock"> Rock <br> ⛰️ </button>
+    <button id="paper"> Paper <br> 📜 </button>
+    <button id="scissors"> Scissors <br> ✂️ </button>
+    <div id='resultsarea'>
+      <div id='scores'>
+        <h3> Your Score: </h3>
+          <p id='userscore'></p>
+        <h3> Computer Score: </h3>
+          <p id='computerscore'></p>
+      </div>
+      <p id='singleroundoutcome'> </p>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    function computerPlay () {
+      computerSelection=Math.floor(Math.random() * Math.floor(3));
+        if(computerSelection===0) {
+          var computerChoice='rock';
+        }
+        else if (computerSelection===1) {
+          var computerChoice='paper';
+        }
+        else {
+          var computerChoice='scissors';
+        }
+      return computerChoice;
+    }
+    function singleRound (playerSelection,computerSelection){
+      var playerSelection = playerSelection.toLowerCase();
+      var computerSelection = computerSelection.toLowerCase();
+      if (playerSelection===computerSelection){
+        var roundResult=`Draw! You both chose ${playerSelection}`;
+      }
+      else {
+        switch(playerSelection) {
+          case 'rock':
+              if(computerSelection==='paper'){
+                var roundResult=`You chose ${playerSelection}, computer chose ${computerSelection}, you lose :(`;
+              }
+              else {
+                var roundResult=`You chose ${playerSelection}, computer chose ${computerSelection}, you win :)`;
+              }
+            break;
+          case 'paper':
+            if(computerSelection==='scissors'){
+              var roundResult=`You chose ${playerSelection}, computer chose ${computerSelection}, you lose :(`;
+            }
+            else {
+              var roundResult=`You chose ${playerSelection}, computer chose ${computerSelection}, you win :)`;
+            }
+            break;
+          case 'scissors':
+            if(computerSelection==='rock'){
+              var roundResult=`You chose ${playerSelection}, computer chose ${computerSelection}, you lose :(`;
+            }
+            else {
+              var roundResult=`You chose ${playerSelection}, computer chose ${computerSelection}, you win :)`;
+            }
+            break;
+          default:
+            var roundResult='Sorry, error D:';
+        }
+      }
+      return (roundResult);
+    }
+
+    let userScore = 0;
+    let computerScore =0;
+
+    function updateScore(outcome) {
+      if (outcome.indexOf('win') >=0) {
+        userScore++;
+      }
+      else if (outcome.indexOf('lose') >=0) {
+        computerScore++;
+      }
+    }
+
+    let rockButton = document.getElementById('rock');
+    let paperButton = document.getElementById('paper');
+    let scissorsButton = document.getElementById('scissors');
+    let userScorePara = document.getElementById('userscore');
+    let computerScorePara = document.getElementById('computerscore');
+    let roundOutcomePara = document.getElementById('singleroundoutcome');
+
+    rockButton.addEventListener('click', () => {
+      let roundOutcome = singleRound('rock',computerPlay());
+      updateScore(roundOutcome);
+      let para = document.createElement("p");
+      let outcomeNode = document.createTextNode(roundOutcome);
+      para.appendChild(outcomeNode);
+      roundOutcomePara.appendChild(para);
+      userScorePara.textContent=userScore;
+      computerScorePara.textContent=computerScore;
+      if (userScore>=5) {
+        alert('You win! New game.');
+        userScore=0;
+        computerScore=0;
+        userScorePara.textContent=0;
+        computerScorePara.textContent=0;
+        let lengthOfParas = document.getElementById('singleroundoutcome').children;
+        for (let i=0; lengthOfParas.length; i++) {
+          roundOutcomePara.removeChild(roundOutcomePara.lastElementChild);
+        }
+      }
+      if (computerScore>=5) {
+        alert('Computer won! New game.');
+        userScore=0;
+        computerScore=0;
+        userScorePara.textContent=0;
+        computerScorePara.textContent=0;
+        let lengthOfParas = document.getElementById('singleroundoutcome').children;
+        for (let i=0; lengthOfParas.length; i++) {
+          roundOutcomePara.removeChild(roundOutcomePara.lastElementChild);
+        }
+      }
+    });
+
+    paperButton.addEventListener('click', () => {
+      let roundOutcome = singleRound('paper',computerPlay());
+      updateScore(roundOutcome);
+      let para = document.createElement("p");
+      let outcomeNode = document.createTextNode(roundOutcome);
+      para.appendChild(outcomeNode);
+      roundOutcomePara.appendChild(para);
+      userScorePara.textContent=userScore;
+      computerScorePara.textContent=computerScore;
+      if (userScore>=5) {
+        alert('You win! New game.');
+        userScore=0;
+        computerScore=0;
+        userScorePara.textContent=0;
+        computerScorePara.textContent=0;
+        let lengthOfParas = document.getElementById('singleroundoutcome').children;
+        for (let i=0; lengthOfParas.length; i++) {
+          roundOutcomePara.removeChild(roundOutcomePara.lastElementChild);
+        }
+      }
+      if (computerScore>=5) {
+        alert('Computer won! New game.');
+        userScore=0;
+        computerScore=0;
+        userScorePara.textContent=0;
+        computerScorePara.textContent=0;
+        let lengthOfParas = document.getElementById('singleroundoutcome').children;
+        for (let i=0; lengthOfParas.length; i++) {
+          roundOutcomePara.removeChild(roundOutcomePara.lastElementChild);
+        }
+      }
+    });
+
+    scissorsButton.addEventListener('click', () => {
+      let roundOutcome = singleRound('scissors',computerPlay());
+      updateScore(roundOutcome);
+      let para = document.createElement("p");
+      let outcomeNode = document.createTextNode(roundOutcome);
+      para.appendChild(outcomeNode);
+      roundOutcomePara.appendChild(para);
+      userScorePara.textContent=userScore;
+      computerScorePara.textContent=computerScore;
+      if (userScore>=5) {
+        alert('You win! New game.');
+        userScore=0;
+        computerScore=0;
+        userScorePara.textContent=0;
+        computerScorePara.textContent=0;
+        let lengthOfParas = document.getElementById('singleroundoutcome').children;
+        for (let i=0; lengthOfParas.length; i++) {
+          roundOutcomePara.removeChild(roundOutcomePara.lastElementChild);
+        }
+      }
+      if (computerScore>=5) {
+        alert('Computer won! New game.');
+        userScore=0;
+        computerScore=0;
+        userScorePara.textContent=0;
+        computerScorePara.textContent=0;
+        let lengthOfParas = document.getElementById('singleroundoutcome').children;
+        for (let i=0; lengthOfParas.length; i++) {
+          roundOutcomePara.removeChild(roundOutcomePara.lastElementChild);
+        }
+      }
+    });
+
+  </script>
+</html>
