@@ -1,0 +1,91 @@
+h1 {
+    text-align: center;
+    font-size: 100px;
+  }
+  
+  h2 {
+    font-size: 60px;
+    text-align: center;
+    padding-top:20px;
+    color: #e6c395;
+    font-family: 'Lobster', cursive;
+    text-shadow: -1px -1px 1px #fff1de, 1px 1px 1px #000;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+  }
+  
+  #tools {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  p {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 245px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: #404040;
+  }
+  
+  #etch {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: red;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    box-shadow: -1px -1px 3px #ffffff, 18px 18px 34px 0px #361e1e;
+  }
+  
+  .dot {
+    height: 80px;
+    width: 80px;
+    background-color: #edebeb;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 18px 18px 34px 0px #361e1e;
+  }
+  
+  #dot1 {
+    margin-right:25%;
+  }
+  
+  #dot2 {
+    margin-left:25%;
+  }
+  
+  #container {
+    display: grid;
+    margin: auto;
+    width: 75%;
+    height: 500px;
+    background-color: white;
+    border-top: 0px;
+  }
+  
+  .grid-item {
+    grid-column: auto / span 1;
+    grid-row: auto / span 1;
+  }
+  
+  .hover {
+    background-color: #404040;
+  }
+  
