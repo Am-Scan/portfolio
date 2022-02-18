@@ -25,7 +25,7 @@ const blossomImages = {
 
 let bgImage = document.getElementById("bgimage");
 
-const step = 150; // For each 30px, change an image
+const step = 100; // For each 30px, change an image
 
 function trackScrollPosition() {
     const y = window.scrollY;

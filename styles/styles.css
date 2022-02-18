@@ -1,5 +1,5 @@
 #bgimage {
-  height: 1000vh;
+  height: 300vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,8 +10,8 @@
   background-color: rgb(78, 135, 152);
 }
 
-#intro-div {
-  padding: 75% 10%;
+#intro-div{
+  padding: 50vh 10% 0%;
 }
 
 #hi-title {
@@ -43,19 +43,42 @@ nav {
 }
 
 #port-div {
-  padding: 75% 0%;
+  padding: 50vh 0vh 0vh;
   text-align: center;
-}
-
-#intro-row {
-  padding-bottom: 100%;
 }
 
 h2 {
   font-family: "Abril Fatface", cursive;
-  font-size: 3vw;
+  font-size: 2vw;
   line-height: 48px;
   text-align: center;
   background-color: rgb(255, 213, 227, 0.8);
   color: black;
+}
+
+.card-img-top {
+  height:200px;
+}
+
+.portfolio-row {
+  padding: 2% 0%;
+}
+
+#contact-div {
+  padding: 50% 10% 0% 10%;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  width:100%;
+  text-decoration: none;
+  color: initial;
+  margin:5% 0% 0%;
+  border: 0;
+  background-color: rgb(255, 213, 227, 0.8);
+  padding:10px;
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
 }
