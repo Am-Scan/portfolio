@@ -1,3 +1,6 @@
+
+/* Background image */
+
 #bgimage {
   height: 300vh;
   background-repeat: no-repeat;
@@ -9,6 +12,18 @@
   background-size: cover;
   background-color: rgb(78, 135, 152);
 }
+
+/* Nav
+
+nav {
+  background-color: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2vw;
+  background: none;
+  height: 50%;
+} */
+
+/* Intro section */
 
 #intro-div{
   padding: 50vh 10% 0%;
@@ -34,13 +49,7 @@
   color: black;
 }
 
-nav {
-  background-color: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 2vw;
-  background: none;
-  height: 50%;
-}
+/* Portfolio */
 
 #port-div {
   padding: 50vh 0vh 0vh;
@@ -56,16 +65,13 @@ h2 {
   color: black;
 }
 
-.card-img-top {
-  height:200px;
-}
-
 .portfolio-row {
   padding: 2% 0%;
 }
 
 #contact-div {
   padding: 50% 10% 0% 10%;
+  margin-bottom: 10%;
 }
 
 a.button {
@@ -82,3 +88,28 @@ a.button {
   font-size: 2vh;
   font-family: "Roboto", sans-serif;
 }
+
+.card-img-top {
+  width: 100%;
+}
+
+.card-body {
+  background-color: rgb(255, 213, 227, 0.8);
+}
+
+.card-body a {
+  color: #000000;
+}
+
+@media screen and (max-width:500px) {
+
+  .col-md-6{
+      width:40.5%;
+      margin: 15px 15px 0 58px;
+  }
+  
+  .col-md-12 {
+       margin: 15px 15px 0 58px;
+  }
+  
+  }
