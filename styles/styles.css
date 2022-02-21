@@ -12,7 +12,7 @@
   width: 100%;
   position: sticky;
   background-size: cover;
-  background-image: url("../images/0.png");
+  background-image: url("../images/paulina-ponce-P4z15DCQ8-I-unsplash\ \(1\).jpg");
 }
 
 /* Nav
@@ -44,6 +44,7 @@ nav {
 
 #hi-sub {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 3vw;
   line-height: 48px;
   text-align: center;
@@ -77,6 +78,10 @@ h2 {
 .card {
   margin-top: 20%;
 }
+.card:hover{
+  box-shadow: 8px 8px 8px pink;
+  transform:scale(1.0.1);
+}
 
 .card-img-top {
   width: 100%;
@@ -91,6 +96,7 @@ h2 {
 .card-text {
   font-size: 2.5vw;
   color: teal;
+  font-weight: 300;
 }
 
 /* Contact */

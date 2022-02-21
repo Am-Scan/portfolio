@@ -23,21 +23,28 @@ const blossomImages = {
     21: "../images/21.png",
 };
 
-let bgImage = document.getElementById("bgimage");
+let card = document.getElementsByClassName("card");
 
-const step = 200;
-
-function trackScrollPosition() {
-    const y = window.scrollY;
-    const label = Math.min(Math.floor(y/step) + 1, 20);
-    const imageToUse = blossomImages[label];
-    bgImage.style.backgroundImage = `url('${imageToUse}')`;
+for (var i = 0; i < card.length; i++) {
+    card[i].addEventListener("mouseover",console.log("yes"));
 }
 
-trackScrollPosition();
 
-document.addEventListener("scroll", (event) => {
-    trackScrollPosition();
-});
+// let bgImage = document.getElementById("bgimage");
+
+// const step = 200;
+
+// function trackScrollPosition() {
+//     const y = window.scrollY;
+//     const label = Math.min(Math.floor(y/step) + 1, 20);
+//     const imageToUse = blossomImages[label];
+//     bgImage.style.backgroundImage = `url('${imageToUse}')`;
+// }
+
+// trackScrollPosition();
+
+// document.addEventListener("scroll", (event) => {
+//     trackScrollPosition();
+// });
 
 
