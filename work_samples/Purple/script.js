@@ -25,4 +25,4 @@ function removeHeart() {
 
 setInterval(createHeart,500);
 
-setInterval(removeHeart,750);
+setInterval(removeHeart,5000);
