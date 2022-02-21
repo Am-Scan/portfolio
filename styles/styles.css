@@ -20,7 +20,7 @@ button {
   position: fixed;
   top: 20px;
   right: 20px;
-  padding: 1rem;
+  padding: 1vw;
   z-index: 2;
   font-size: 3vw !important;
 }
@@ -31,7 +31,7 @@ nav {
   top: 0;
   right: 0;
   height: 100vh;
-  padding: 2rem;
+  padding: 2vw;
   transform: translateX(100%);
   z-index: 1;
   font-weight: 200;
@@ -42,14 +42,14 @@ nav.active {
 }
 
 nav ul {
-  padding: 1rem;
+  padding: 2vw;
   margin: 0;
   list-style-type: none;
 }
 
 nav ul li {
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 1vw;
+  font-size: 3vw;
 }
 
 nav a {
@@ -150,3 +150,4 @@ a.button {
   font-size: 3vw;
   font-family: "Roboto", sans-serif;
 }
+
