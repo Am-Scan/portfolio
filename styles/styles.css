@@ -22,7 +22,10 @@
   font-weight: 300;
   font-size: 2vw;
   background-color:  rgb(255, 213, 227, 1);
+}
 
+.navbar a {
+  color: #000000 !important;
 }
 
 .nav {
@@ -81,6 +84,7 @@ h2 {
 
 .card {
   margin-top: 20%;
+  background-color: transparent;
 }
 .card:hover{
   box-shadow: 8px 8px 8px pink;
