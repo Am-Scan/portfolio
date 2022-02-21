@@ -102,7 +102,7 @@ h2 {
 }
 
 #port-div {
-  padding: 50vh 0vh 0vh;
+  padding: 50% 0% 0%;
   text-align: center;
 }
 
@@ -111,34 +111,35 @@ h2 {
 }
 
 .card {
-  margin-top: 20%;
+  margin-top: 10%;
   background-color: transparent;
+  display: none;
 }
+
 .card:hover{
   box-shadow: 8px 8px 8px pink;
   transform:scale(1.0.1);
 }
 
 .card-img-top {
+  height: 20%;
   width: 100%;
-  height: 30%;
 }
 
 .card-body {
   background-color: rgb(255, 213, 227, 0.8);
-  height: 20vw;
-  
 }
 
 .card-text {
-  font-size: 3vw;
-  color: teal;
+  font-size: 2vw;
+  color: black;
   font-weight: 300;
 }
 
 /* Contact */
-  #contact-div {
-   padding: 50% 10% 10% 10%;
+  .contact-div {
+    margin-top: 50%;
+    padding: 0% 10% 10% 10%;
   }
 
   a.button {
@@ -152,11 +153,6 @@ h2 {
     border: 0;
     background-color: rgb(255, 213, 227, 0.8);
     padding:10px;
-    font-size: 2vh;
+    font-size: 3vh;
     font-family: "Roboto", sans-serif;
   }
-
-  a.button :hover {
-    color:#000000;
-  }
-
