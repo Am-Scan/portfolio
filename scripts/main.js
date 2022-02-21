@@ -23,14 +23,15 @@ const blossomImages = {
     21: "../images/21.png",
 };
 
-let btn = document.getElementById("btn");
 
-let nav = document.getElementById("nav");
-
-btn.addEventListener("click",()=>{
-    btn.classList.toggle("active");
-    nav.classList.toggle("active");
-});
+function responsiveNav() {
+    var x = document.getElementById("mynav-bar");
+    if (x.className === "nav-bar") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-bar";
+    }
+  }
 
 
 // Note: this will change the background on scroll however this is currently disabled for simplicity
