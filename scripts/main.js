@@ -23,12 +23,6 @@ const blossomImages = {
     21: "../images/21.png",
 };
 
-// let card = document.getElementsByClassName("card");
-
-// for (var i = 0; i < card.length; i++) {
-//     card[i].addEventListener("mouseover",console.log("yes"));
-// }
-
 let btn = document.getElementById("btn");
 
 let nav = document.getElementById("nav");
@@ -38,6 +32,8 @@ btn.addEventListener("click",()=>{
     nav.classList.toggle("active");
 });
 
+
+// Note: this will change the background on scroll however this is currently disabled for simplicity
 
 // let bgImage = document.getElementById("bgimage");
 
