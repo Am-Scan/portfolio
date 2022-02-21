@@ -82,7 +82,7 @@ nav a {
 .nav-bar .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 598px) {
   .nav-bar a {
     display: none;
   }
@@ -92,7 +92,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 598px) {
   .nav-bar.responsive {
     position: relative;
   }
@@ -139,7 +139,7 @@ nav a {
 
 h2 {
   font-family: "Abril Fatface", cursive;
-  font-size: 7vw !important;
+  font-size: 3vw !important;
   text-align: center;
   background-color: rgb(255, 213, 227, 0.8);
   color: black;
@@ -197,7 +197,7 @@ a.button {
   border: 0;
   background-color: rgb(255, 213, 227, 0.8);
   padding: 10px;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: "Roboto", sans-serif;
 }
 
